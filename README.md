@@ -7,11 +7,11 @@
 - Armbian源码https://github.com/armbian/build
 
 ## 仓库详情
-- rk3399-main用来构建6.6内核，由于6.12kerneld的rk3399-opp被合并了，不可用于6.12及以上内核构建
-- stable：kernel-6.1；current：kernel-6.6；edge：kernel-最新
+- rk3399-main用来构建6.6内核，由于6.12 kernel的rk3399-opp被合并了，不可用于6.12及以上内核构建
+- stable：kernel-6.1；current：kernel-6.12；edge：kernel-最新
 - rk3399-beta分支是测试分支，主要用来验证dts/patch的可行性和构建6.12及以上内核
-- rockchip64-current存放current（rockchip64-6.6）,edge（目前是rockchip64-6.12）的patch/dts文件通过软链接让一份文件实现复用
-- rockchip64-6.1存放stable（自定义内核分支，armbian没有这个分支，默认为current-6.6）
+- rockchip64-current存放current（rockchip64-6.12）,edge（目前是rockchip64-6.13）的patch/dts文件通过软链接让一份文件实现复用
+- rockchip64-6.1存放stable（自定义内核分支，armbian没有这个分支，25.02以后默认为current-6.12）
 - stable必须要在xxx.conf的KERNEL_TARGET选项添加stable
 
 ## yml工作流文件说明  
