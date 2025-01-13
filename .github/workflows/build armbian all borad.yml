@@ -11,6 +11,7 @@ on:
         options:
           - all
           - fine3399
+          - fmx1-pro
           - r08
           - rock960
           - sg2710
