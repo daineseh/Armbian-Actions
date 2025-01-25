@@ -9,13 +9,15 @@ on:
         default: 'tpm312'
         type: choice
         options:
+          - tpm312
+          - nanopim4v2
+          - nanopct4
           - emb3531
           - fine3399
           - fmx1-pro
           - r08
           - rock960
           - sg2710
-          - tpm312
           - tb-ls3399
           - xiaobao-nas
           - zysj
