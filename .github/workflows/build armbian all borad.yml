@@ -70,7 +70,7 @@ env:
   
 jobs:  
   build-armbian:  
-    runs-on: ubuntu-latest  
+    runs-on: ubuntu-22.04  
     steps:  
       - name: Checkout  
         uses: actions/checkout@v3    
@@ -158,7 +158,7 @@ jobs:
           allowUpdates: true 
           removeArtifacts: false 
           replacesArtifacts: true 
-          token: ${{ secrets.MY_TOKEN }}  
+          token: ${{ secrets.GITHUB_TOKEN }}  
           body: |  
             ### Armbian Image Information  
             - Release: ${{ github.event.inputs.RELEASE }}    
